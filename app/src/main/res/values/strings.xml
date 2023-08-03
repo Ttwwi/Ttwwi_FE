@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Ttwwi</string>
+    <string name="app_small_letter_name">ttwwi</string>
+    <!--  SignUpActivity  -->
+    <string name="introduce_desc1">안녕하세요, Ttwwi에</string>
+    <string name="introduce_desc2">여러분들의 추억을 보관하세요!</string>
+    <string name="start_button">시작하기</string>
+    <string name="login_question">이미 계정이 있으신가요?</string>
+    <string name="login_desc">로그인</string>
+    <!--  SocialLogin  -->
+    <string name="kakao_login">카카오 로그인</string>
+    <string name="facebook_login">Facebook 로그인</string>
+    <!--  AppIntroduceViewPager  -->
+    <string name="illustration_introduce1">소중한 사람과의 추억을 한눈에1</string>
+    <string name="illustration_introduce2">소중한 사람과의 추억을 한눈에2</string>
+    <string name="illustration_introduce3">소중한 사람과의 추억을 한눈에3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
