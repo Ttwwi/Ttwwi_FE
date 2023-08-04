@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/auth_button_pattern"
-                android:backgroundTint="@color/main_color"
+                android:backgroundTint="@color/kakao_color"
                 android:orientation="horizontal"
                 android:paddingTop="12dp"
                 android:paddingBottom="12dp">
