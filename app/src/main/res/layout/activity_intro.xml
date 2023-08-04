@@ -22,10 +22,26 @@
             android:id="@+id/viewPager_app_introduction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="120dp"
+            android:layout_marginBottom="60dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+<!--        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator-->
+<!--            android:id="@+id/spring_dots_indicator"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:dampingRatio="0.5"-->
+<!--            app:dotsCornerRadius="4dp"-->
+<!--            app:dotsSize="8dp"-->
+<!--            app:dotsSpacing="6dp"-->
+<!--            app:dotsStrokeWidth="2dp"-->
+<!--            app:dotsStrokeColor="@color/indicator_stroke_color"-->
+<!--            app:dotsColor="@color/main_color"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/viewPager_app_introduction" />-->
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -43,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/auth_button_pattern"
-                android:backgroundTint="@color/main_color"
+                android:backgroundTint="@color/kakao_color"
                 android:orientation="horizontal"
                 android:paddingTop="12dp"
                 android:paddingBottom="12dp">
