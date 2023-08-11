@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.flatwater.ttwwi"
-        minSdk 21
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -43,6 +43,9 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // kakao SDK module setting
+    implementation "com.kakao.sdk:v2-all:2.15.0" // 전체 모듈 설치, 2.11.0 버전부터 지원
 
     // indicators
 //    implementation 'com.tbuonomo:dotsindicator:5.0'
