@@ -8,12 +8,16 @@
     <string name="login_question">이미 계정이 있으신가요?</string>
     <string name="login_desc">로그인</string>
     <!--  SocialLogin  -->
+    <string name="kakao_native_app_key">c5c754213bc47db0bf3dca88211b5fe3</string>
+    <string name="kakao_key">kakaoc5c754213bc47db0bf3dca88211b5fe3</string>
     <string name="kakao_login">카카오 로그인</string>
     <string name="facebook_login">Facebook 로그인</string>
     <!--  AppIntroduceViewPager  -->
     <string name="illustration_introduce1">소중한 사람과의 추억을 한눈에1</string>
     <string name="illustration_introduce2">소중한 사람과의 추억을 한눈에2</string>
     <string name="illustration_introduce3">소중한 사람과의 추억을 한눈에3</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  SignUpCompleteActivity  -->
+    <string name="signupcomplete_username">Default_User님,</string>
+    <string name="signupcomplete_welcome_text">Ttwwi에 가입하신 것을 환영합니다!</string>
+    <string name="signupcomplete_start_button">확인</string>
 </resources>
