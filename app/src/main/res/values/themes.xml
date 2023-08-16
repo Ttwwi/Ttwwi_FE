@@ -19,4 +19,11 @@
         <item name="colorPrimary">@color/main_color</item>
         <item name="android:statusBarColor">@color/main_color</item>
     </style>
+    <!--  MyPage_ProfileEditBottomSheet Theme  -->
+    <style name="ProfileEditBottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ProfileEditBottomSheetShape</item>
+    </style>
+    <style name="ProfileEditBottomSheetShape" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/mypage_profile_edit_modal</item>
+    </style>
 </resources>
