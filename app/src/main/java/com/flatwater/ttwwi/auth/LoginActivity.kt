@@ -1,8 +1,10 @@
 package com.flatwater.ttwwi.auth
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.flatwater.ttwwi.MainActivity
 import com.flatwater.ttwwi.R
 import com.flatwater.ttwwi.databinding.ActivityLoginBinding
 
@@ -16,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
 
         binding.socialLoginKakaoBtn.setOnClickListener {
             // kakao 소셜 로그인 연결 예정
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
         binding.socialLoginFacebookBtn.setOnClickListener {
