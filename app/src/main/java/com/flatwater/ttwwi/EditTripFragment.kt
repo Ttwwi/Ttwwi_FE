@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.flatwater.ttwwi.databinding.FragmentEditTripBinding
 
+// EditTripPage 작업 예정 (8/18 ~ )
 class EditTripFragment : Fragment() {
 
     lateinit var binding: FragmentEditTripBinding
