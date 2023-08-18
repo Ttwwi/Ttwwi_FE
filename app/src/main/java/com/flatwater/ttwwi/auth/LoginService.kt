@@ -8,7 +8,7 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface LoginService {
-    @POST("backend https:// 제거한 uri")
+    @POST("/oauth2/callback/kakao")
 
     fun postAccessToken(
         //@Header("access_token") token : String
@@ -19,7 +19,7 @@ interface LoginService {
         private val gson = GsonBuilder().setLenient().create()
         fun loginRetrofit() : LoginService {
             return Retrofit.Builder()
-            .baseUrl("") // backend server address
+            .baseUrl("http://43.202.39.197:8000") // backend server address
             // .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
