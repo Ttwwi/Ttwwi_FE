@@ -19,6 +19,7 @@ import com.kakao.sdk.user.UserApiClient
 
 private const val NUM_PAGES = 5
 
+// kakao login 서버 연결 전 상태
 class IntroActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityIntroBinding
