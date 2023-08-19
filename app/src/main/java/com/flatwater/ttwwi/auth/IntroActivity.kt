@@ -65,6 +65,7 @@ class IntroActivity : AppCompatActivity() {
         }
     }
 
+    // #P : 인가 코드 백엔드 서버로 넘겨주기 + 백엔드 서버에게 JWT 토큰과 인증 코드 전달 받기 (8/19)
     private fun kakaoLogin() {
 
         // 카카오계정으로 로그인 공통 callback 구성
