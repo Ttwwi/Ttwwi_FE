@@ -19,7 +19,7 @@ interface LoginService {
         private val gson = GsonBuilder().setLenient().create()
         fun loginRetrofit() : LoginService {
             return Retrofit.Builder()
-            .baseUrl("http://43.202.39.197:8000") // backend server address
+            .baseUrl("http://43.202.39.197:8000")
             // .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
