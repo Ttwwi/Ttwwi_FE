@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.flatwater.ttwwi.HomeFragment"
+        android:name="com.flatwater.ttwwi.fragment.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.flatwater.ttwwi.SearchFragment"
+        android:name="com.flatwater.ttwwi.fragment.SearchFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/editTripFragment"
-        android:name="com.flatwater.ttwwi.EditTripFragment"
+        android:name="com.flatwater.ttwwi.fragment.EditTripFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.flatwater.ttwwi.NotificationFragment"
+        android:name="com.flatwater.ttwwi.fragment.NotificationFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/myAccountFragment"
-        android:name="com.flatwater.ttwwi.MyAccountFragment"
+        android:name="com.flatwater.ttwwi.fragment.MyAccountFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 </navigation>
