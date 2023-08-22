@@ -22,6 +22,7 @@ import com.kakao.sdk.user.UserApiClient
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 private const val NUM_PAGES = 5
 
@@ -42,6 +43,12 @@ class IntroActivity : AppCompatActivity() {
         viewPager = binding.viewPagerAppIntroduction
         val pagerAdapter = AppIntroducePagerAdapter(this)
         viewPager.adapter = pagerAdapter
+
+        // Retrofit2 추가 작업 코드 (8/22)
+        retrofit = Retrofit.Builder()
+            .baseUrl("http://43.202.39.197:8000")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
 
         // 카카오 로그인 정보 확인
         UserApiClient.instance.accessTokenInfo { tokenInfo, error ->
