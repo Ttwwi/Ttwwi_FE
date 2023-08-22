@@ -20,4 +20,7 @@
     <color name="mypage_purple_color">#8F7CBC</color>
     <color name="mypage_modal_stroke_color">#8F9090</color>
     <color name="mypage_gray_color">#D3D3D3</color>
+
+    <!--  edittrippage color  -->
+    <color name="edittrippage_gray_color">#A2A2A2</color>
 </resources>
