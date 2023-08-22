@@ -5,13 +5,14 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
+import retrofit2.http.Header
 import retrofit2.http.POST
 
 interface LoginService {
-    @POST("/oauth2/callback/kakao")
+    @POST("/login/oauth2/code/kakao")
 
     fun postAccessToken(
-        //@Header("access_token") token : String
+        // @Header("access_token") token : String
         @Body jsonParams : UserModel
     ) : Call<LoginBackendResponse>
 

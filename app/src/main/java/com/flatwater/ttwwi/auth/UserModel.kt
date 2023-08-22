@@ -7,9 +7,9 @@ data class UserModel(
 )
 
 data class LoginBackendResponse (
-    val name : String,
-    val email : String,
-    val image : Url,
+    // val name : String,
+    // val email : String,
+    // val image : Url,
 
     val accessToken : String,
     val refreshToken : String
