@@ -1,4 +1,4 @@
-package com.flatwater.ttwwi
+package com.flatwater.ttwwi.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

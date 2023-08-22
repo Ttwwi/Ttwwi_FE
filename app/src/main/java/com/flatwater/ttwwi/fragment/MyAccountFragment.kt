@@ -1,4 +1,4 @@
-package com.flatwater.ttwwi
+package com.flatwater.ttwwi.fragment
 
 import android.Manifest
 import android.content.Intent
@@ -14,6 +14,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import coil.load
 import com.bumptech.glide.Glide
+import com.flatwater.ttwwi.ProfileEditBottomSheet
+import com.flatwater.ttwwi.R
 import com.flatwater.ttwwi.auth.IntroActivity
 import com.flatwater.ttwwi.auth.SignUpActivity
 import com.flatwater.ttwwi.databinding.FragmentMyAccountBinding
