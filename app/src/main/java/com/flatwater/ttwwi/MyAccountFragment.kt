@@ -98,8 +98,8 @@ class MyAccountFragment : Fragment() {
 
         // #C : 프로필 수정 버튼 이벤트
         binding.profileEditButton.setOnClickListener {
-            // profileEditBottomSheet()
-            readImage.launch("image/*")
+            profileEditBottomSheet()
+            // readImage.launch("image/*")
         }
 
         // #E : 갤러리 연동을 잘 되지만, 사진을 바꾸지 않아도 원래 프로필 사진이 사라짐
@@ -111,7 +111,7 @@ class MyAccountFragment : Fragment() {
 
     // #M : 프로필 수정 버튼 새로 만들어서 다시 배치
     private fun profileEditBottomSheet() {
-        val modal = ProfileEditBottomSheet()
+        val modal = ProfileEditBottomSheet(requireContext())
         modal.setStyle(DialogFragment.STYLE_NORMAL, R.style.ProfileEditBottomSheetTheme)
         modal.show(childFragmentManager, ProfileEditBottomSheet.TAG)
     }
