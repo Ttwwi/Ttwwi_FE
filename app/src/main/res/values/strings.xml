@@ -25,6 +25,9 @@
     <string name="mypage_nofeed_notification">여러분의 추억을 남겨보세요!</string>
     <string name="mypage_profile_edit_photo_text">프로필 사진 변경하기</string>
     <string name="mypage_profile_edit_nickname_text">닉네임 변경하기</string>
+    <string name="mypage_profile_edit_nickname_dialog_title">닉네임 변경</string>
+    <string name="mypage_profile_edit_nickname_dialog_button">저장</string>
+    <string name="mypage_profile_edit_nickname_dialog_hint">새 닉네임을 입력해주세요</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
