@@ -1,13 +1,15 @@
 package com.flatwater.ttwwi
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.flatwater.ttwwi.databinding.ProfileEditModalBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class ProfileEditBottomSheet() : BottomSheetDialogFragment() {
+class ProfileEditBottomSheet(context: Context) : BottomSheetDialogFragment() {
 
     lateinit var binding: ProfileEditModalBinding
 
@@ -29,9 +31,19 @@ class ProfileEditBottomSheet() : BottomSheetDialogFragment() {
             dismiss()
         }
 
+        val editNicknameDialog = EditNicknameDialog(requireContext())
         binding.editNickname.setOnClickListener {
-            // #P : 닉네임 변경하는 다이얼로그 바인딩
-            dismiss()
+            // #P : 닉네임 변경하는 다이얼로그 바인딩 (initialize button 클릭했을 때 발생하는 "Attempt to invoke virtual method 'java.lang.String android.content.Context.getPackageName()' on a null object reference" 문제 해결하여야 함!)
+            editNicknameDialog.showEditNicknameDialog()
+            editNicknameDialog.setOnClickedListener(object : EditNicknameDialog.SaveButtonClickListener {
+                override fun onClicked(newNickname: String) {
+                    if(newNickname.length > 0) {
+                        Toast.makeText(activity, "닉네임에 반영할게요!", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(activity, "닉네임에 반영하지 않을게요!", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            })
         }
     }
 
