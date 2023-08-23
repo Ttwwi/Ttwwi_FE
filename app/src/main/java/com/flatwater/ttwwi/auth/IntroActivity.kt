@@ -31,7 +31,7 @@ class IntroActivity : AppCompatActivity() {
 
     private lateinit var viewPager: ViewPager2
 
-    private var retrofit: Retrofit = RetrofitHelper.getRetrofitInstance() // RetrofitHelper의 instance 호출
+    private var retrofit: Retrofit = RetrofitHelper.getRetrofitInstance()// RetrofitHelper의 instance 호출
     private var authToken : String ?= null
     var api : LoginService = retrofit.create(LoginService::class.java)
 
@@ -136,7 +136,7 @@ class IntroActivity : AppCompatActivity() {
                         }
                     }
                     override fun onFailure(call: Call<LoginBackendResponse>, t: Throwable) {
-                        Log.d("통신 로그인", "전송 실패")
+                        Log.d("통신 로그인", t.message.toString())
                     }
                 })
             }

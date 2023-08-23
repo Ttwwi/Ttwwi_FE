@@ -1,5 +1,6 @@
 package com.flatwater.ttwwi.auth
 
+import com.google.gson.annotations.SerializedName
 import retrofit2.http.Url
 
 data class UserModel(
@@ -7,10 +8,8 @@ data class UserModel(
 )
 
 data class LoginBackendResponse (
-    // val name : String,
-    // val email : String,
-    // val image : Url,
-
-    val accessToken : String,
-    val refreshToken : String
+     val name : String,
+     val email : String,
+     val accessToken : String,
+     val refreshToken : String
 )
