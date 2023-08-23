@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,224 +13,300 @@
             android:id="@+id/topLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:src="@drawable/logo_small_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!--  정규 표현식 적용 예정  -->
-            <LinearLayout
-                android:id="@+id/tripTitleArea"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/edittrippage_title_text"
-                    android:textAppearance="@style/edittrippage_title_text" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/edittrippage_input_pattern"/>
-
-            </LinearLayout>
-
-            <!--  갤러리 & 카메라 연동 기능 추가 예정  -->
-            <LinearLayout
-                android:id="@+id/tripProfilePhotoArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tripTitleArea">
-
-                <TextView
-                    android:text="@string/edittrippage_profile_photo_text"
-                    android:textAppearance="@style/edittrippage_title_text"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"/>
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/tripTitleArea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:src="@drawable/edittrippage_add_photo_btn"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:padding="30dp"/>
-
-                    <Button
-                        android:text="@string/edittrippage_profile_photo_register_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <!--  정규 표현식 적용 예정  -->
-            <LinearLayout
-                android:id="@+id/tripSubTitleArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tripProfilePhotoArea">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/edittrippage_subtitle_text"
-                    android:textAppearance="@style/edittrippage_title_text"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/edittrippage_input_pattern"/>
-
-            </LinearLayout>
-
-            <!--  정규 표현식 적용 예정  -->
-            <LinearLayout
-                android:id="@+id/tripDescriptionArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tripSubTitleArea">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/edittrippage_description_text"
-                    android:textAppearance="@style/edittrippage_title_text" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/edittrippage_input_pattern" />
-
-            </LinearLayout>
-
-            <!--  정규 표현식 적용 예정  -->
-            <LinearLayout
-                android:id="@+id/tripPasswordArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tripDescriptionArea">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/edittrippage_password_text"
-                    android:textAppearance="@style/edittrippage_title_text" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/edittrippage_input_pattern" />
-
-            </LinearLayout>
-
-            <!--  카카오 & 인스타 소셜 기능 연결 예정  -->
-            <LinearLayout
-                android:id="@+id/friendInviteArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tripPasswordArea">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edittrippage_sns_invite_text"
-                    android:textAppearance="@style/edittrippage_title_text"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginRight="20dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <Button
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="8dp"
-                        android:layout_weight="1"
-                        android:text="카카오톡" />
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/edittrippage_title_text"
+                        android:textAppearance="@style/edittrippage_title_text" />
 
-                    <Button
-                        android:layout_width="wrap_content"
+                    <EditText
+                        android:id="@+id/trip_name"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:text="인스타그램" />
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittrippage_input_pattern"
+                        android:fontFamily="@font/jua"
+                        android:hint="@string/edittrippage_title_input_hint"
+                        android:padding="10dp"
+                        android:textColorHint="@color/edittrippage_gray_color"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
-            </LinearLayout>
+                <!--  갤러리 & 카메라 연동 기능 추가 예정  -->
+                <LinearLayout
+                    android:id="@+id/tripProfilePhotoArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tripTitleArea">
 
-            <Button
-                android:id="@+id/makeTripBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="여행 만들기"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/edittrippage_profile_photo_text"
+                        android:textAppearance="@style/edittrippage_title_text"
+                        android:textColor="@color/black" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
 
+                        <ImageView
+                            android:id="@+id/trip_profile_photo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/edittrippage_input_pattern"
+                            android:padding="30dp"
+                            android:src="@drawable/edittrippage_add_photo_btn" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/trip_profile_photo_register_button"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/edittrippage_register_photo_btn"
+                            android:text="@string/edittrippage_profile_photo_register_text"
+                            android:textAppearance="@style/edittrippage_profile_photo_register_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tripSubTitleArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tripProfilePhotoArea">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/edittrippage_subtitle_text"
+                        android:textAppearance="@style/edittrippage_title_text" />
+
+                    <EditText
+                        android:id="@+id/trip_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittrippage_input_pattern"
+                        android:fontFamily="@font/jua"
+                        android:hint="@string/edittrippage_subtitle_input_hint"
+                        android:padding="10dp"
+                        android:textColorHint="@color/edittrippage_gray_color"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tripDescriptionArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tripSubTitleArea">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/edittrippage_description_text"
+                        android:textAppearance="@style/edittrippage_title_text" />
+
+                    <EditText
+                        android:id="@+id/trip_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittrippage_input_pattern"
+                        android:fontFamily="@font/jua"
+                        android:hint="@string/edittrippage_description_input_hint"
+                        android:padding="10dp"
+                        android:textColorHint="@color/edittrippage_gray_color"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tripPasswordArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tripDescriptionArea">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/edittrippage_password_text"
+                        android:textAppearance="@style/edittrippage_title_text" />
+
+                    <EditText
+                        android:id="@+id/trip_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittrippage_input_pattern"
+                        android:fontFamily="@font/jua"
+                        android:hint="@string/edittrippage_password_input_hint"
+                        android:padding="10dp"
+                        android:textColorHint="@color/edittrippage_gray_color"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/friendInviteArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tripPasswordArea">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edittrippage_sns_invite_text"
+                        android:textAppearance="@style/edittrippage_title_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/kakao_invite_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittrippage_kakao_invite_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/icon_edittrippage_kakao_invite" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="@string/edittrippage_sns_kakao_invite_text"
+                                android:textAppearance="@style/edittrippage_sns_invite_button_text" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="0dp" />
+
+                        <LinearLayout
+                            android:id="@+id/instagram_invite_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittrippage_instagram_invite_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/icon_edittrippage_instagram_invite" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edittrippage_sns_instagram_invite_text"
+                                android:textAppearance="@style/edittrippage_sns_invite_button_text"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/makeTripBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittrippage_gofeed_btn"
+                    android:text="@string/edittrippage_go_feed_button"
+                    android:textAppearance="@style/edittrippage_go_feed_button_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/friendInviteArea" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
     </FrameLayout>
 </layout>
