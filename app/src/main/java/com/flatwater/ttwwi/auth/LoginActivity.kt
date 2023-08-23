@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
             // kakao 소셜 로그인 연결 예정
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.socialLoginFacebookBtn.setOnClickListener {
