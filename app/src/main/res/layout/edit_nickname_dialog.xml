@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 색상, 테두리 feature/edittrippage와 merge하고나서 반영할 예정 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="@drawable/edit_nickname_dialog"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/top_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16sp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/profile_nickname_icon"/>
+
+        <TextView
+            android:text="@string/mypage_profile_edit_nickname_dialog_title"
+            android:textAppearance="@style/nickname_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_large_back_btn"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:background="@drawable/edit_nickname_dialog_btn"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/new_nickname"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:padding="4dp"
+                android:hint="@string/mypage_profile_edit_nickname_dialog_hint"
+                android:textColorHint="#D3D3D3"
+                android:textSize="10sp"
+                android:fontFamily="@font/jua"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/initialize_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/icon_small_back_btn" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/edit_nickname_save_btn"
+            android:text="@string/mypage_profile_edit_nickname_dialog_button"
+            android:textAppearance="@style/nickname_dialog_save_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_nickname_dialog_btn"/>
+
+    </LinearLayout>
+</LinearLayout>
