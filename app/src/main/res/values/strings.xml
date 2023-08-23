@@ -27,10 +27,17 @@
     <string name="mypage_profile_edit_nickname_text">닉네임 변경하기</string>
     <!--  EditTripPageFragment  -->
     <string name="edittrippage_title_text">제목</string>
+    <string name="edittrippage_title_input_hint">제목을 입력하세요.</string>
     <string name="edittrippage_subtitle_text">부제</string>
+    <string name="edittrippage_subtitle_input_hint">부제목을 입력하세요.</string>
     <string name="edittrippage_password_text">비밀번호</string>
+    <string name="edittrippage_password_input_hint">비밀번호를 입력하세요.</string>
     <string name="edittrippage_profile_photo_text">프로필 사진 등록</string>
     <string name="edittrippage_description_text">설명</string>
+    <string name="edittrippage_description_input_hint">설명을 입력하세요.</string>
     <string name="edittrippage_sns_invite_text">소셜 로그인 친구초대</string>
+    <string name="edittrippage_sns_kakao_invite_text">카카오톡</string>
+    <string name="edittrippage_sns_instagram_invite_text">인스타그램</string>
     <string name="edittrippage_profile_photo_register_text">사진 등록하기</string>
+    <string name="edittrippage_go_feed_button">여행하러 가기</string>
 </resources>
