@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Ttwwi</string>
     <string name="app_small_letter_name">ttwwi</string>
+    <!--  Common  -->
+    <string name="common_sample_text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
     <!--  SignUpActivity  -->
     <string name="introduce_desc1">안녕하세요, Ttwwi에</string>
     <string name="introduce_desc2">여러분들의 추억을 보관하세요!</string>
@@ -40,4 +44,9 @@
     <string name="edittrippage_sns_instagram_invite_text">인스타그램</string>
     <string name="edittrippage_profile_photo_register_text">사진 등록하기</string>
     <string name="edittrippage_go_feed_button">여행하러 가기</string>
+    <!--  TripFeedActivity  -->
+    <string name="tripfeedpage_publisher_name">사용자 닉네임</string>
+    <string name="tripfeedpage_like_text">좋아요</string>
+    <string name="tripfeedpage_like_quantity_text">개</string>
+    <string name="tripfeedpage_comment_hint_text">댓글 쓰기...</string>
 </resources>

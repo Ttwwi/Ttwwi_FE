@@ -23,4 +23,7 @@
 
     <!--  edittrippage color  -->
     <color name="edittrippage_gray_color">#A2A2A2</color>
+
+    <!--  post item color  -->
+    <color name="line">#D9D9D9</color>
 </resources>
