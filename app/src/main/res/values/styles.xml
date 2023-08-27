@@ -143,4 +143,30 @@
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/jua</item>
     </style>
+    <!--  MakePostActivity  -->
+    <style name="makepostpage_pagetitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/jua</item>
+    </style>
+    <style name="makepostpage_18sp_black">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/jua</item>
+    </style>
+    <style name="makepostpage_16sp_black">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/jua</item>
+    </style>
+    <style name="makepostpage_16sp_gray">
+        <item name="android:textColor">@color/edittrippage_gray_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/jua</item>
+    </style>
+    <style name="makepostpage_14sp_black">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/jua</item>
+    </style>
 </resources>

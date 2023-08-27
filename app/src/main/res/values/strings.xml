@@ -49,4 +49,11 @@
     <string name="tripfeedpage_like_text">좋아요</string>
     <string name="tripfeedpage_like_quantity_text">개</string>
     <string name="tripfeedpage_comment_hint_text">댓글 쓰기...</string>
+    <!--  MakePostActivity  -->
+    <string name="makepostpage_pagetitle_text">게시글 만들기</string>
+    <string name="makepostpage_selectedphototitle_text">선택된 사진 목록</string>
+    <string name="makepostpage_description_text">설명</string>
+    <string name="makepostpage_makepost_button_text">게시글 등록하기</string>
+    <string name="makepostpage_choose_multiphoto_text">여러 항목 선택</string>
+    <string name="makepostpage_description_hint_text">설명을 입력하세요</string>
 </resources>
