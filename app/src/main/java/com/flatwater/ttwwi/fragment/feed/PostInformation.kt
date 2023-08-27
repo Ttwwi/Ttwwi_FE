@@ -1,15 +1,17 @@
 package com.flatwater.ttwwi.fragment.feed
 
+import android.net.Uri
 import java.net.URI
 
 data class PostInformation(
-    val publisherName : String,
-    val publisherPhoto : URI,
+    var publisherProfileName : String,
+    var publisherProfilePhotoUri : String,
     val publisherDescription : String,
-    val publisherImages : List<Images>
+    val publisherUploadImages : List<UploadImages>,
+    val userProfilePhoto : Uri
 ) {
-    data class Images(
-        val image : URI
+    data class UploadImages(
+        val UploadImage : Uri
     )
 }
 

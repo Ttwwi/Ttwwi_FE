@@ -7,8 +7,10 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.bumptech.glide.Glide
 import com.flatwater.ttwwi.R
 import com.flatwater.ttwwi.databinding.ActivityTripFeedBinding
+import com.kakao.sdk.user.UserApiClient
 
 class TripFeedActivity : AppCompatActivity() {
 
@@ -33,5 +35,11 @@ class TripFeedActivity : AppCompatActivity() {
             val intent = Intent(this, MakePostActivity::class.java)
             startActivity(intent)
         }
+
+        // #M : Post 목록 피드 페이지에 랜더링
+        // 사용자 정보 획득
+
+        val postList = ArrayList<PostInformation>()
+
     }
 }
