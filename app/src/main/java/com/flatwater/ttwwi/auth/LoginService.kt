@@ -1,5 +1,6 @@
 package com.flatwater.ttwwi.auth
 
+import android.util.Log
 import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -14,7 +15,7 @@ interface LoginService {
 
     // "Base_uri/login/oauth2/code/kakao"와 POST 통신 -> BODY에  UserModel 형식을 갖는 jsonParams 전송
     // @Headers("accept: application/json", "content-type: application/json")
-    @POST("/oauth2/authorize/kakao") // 서버 전송 주소 (수정 가능!)
+    @POST("/login/oauth2/code/kakao") // 서버 전송 주소 (수정 가능!)
     fun postAccessToken(
         @Body jsonParams : UserModel
     ) : Call<LoginBackendResponse>
