@@ -7,14 +7,173 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
+        android:orientation="vertical"
         tools:context=".fragment.feed.MakePostActivity">
+
+        <ImageView
+            android:id="@+id/topLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo_small_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="게시글 제작"
-            android:textColor="@color/black" />
+            android:layout_marginLeft="20dp"
+            android:text="@string/makepostpage_pagetitle_text"
+            android:textAppearance="@style/makepostpage_pagetitle" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/trip_profile_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/edittrippage_input_pattern"
+                android:padding="36dp"
+                android:src="@drawable/edittrippage_add_photo_btn" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/trip_profile_photo_register_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/edittrippage_register_photo_btn"
+                android:text="@string/edittrippage_profile_photo_register_text"
+                android:textAppearance="@style/makepostpage_16sp_black" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edittrippage_gray_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/makepostpage_selectedphototitle_text"
+                android:textAppearance="@style/makepostpage_18sp_black" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/choose_multi_photo_btn"
+                android:layout_width="120dp"
+                android:layout_height="36sp"
+                android:background="@drawable/edittrippage_register_photo_btn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/makepostpage_choose_multi_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makepostpage_choose_multiphoto_text"
+                    android:textAppearance="@style/makepostpage_14sp_black"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <!--  no photo -> 아직 사진이 없습니다! / having photo -> photo 랜더링  -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/selected_photo"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_selected_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edittrippage_gray_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/makepostpage_description_text"
+                android:textAppearance="@style/makepostpage_18sp_black"/>
+
+            <EditText
+                android:id="@+id/post_description_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="@string/edittrippage_description_input_hint"
+                android:textColor="@color/black"
+                android:textColorHint="@color/edittrippage_gray_color"
+                android:textSize="16sp"
+                android:fontFamily="@font/jua"
+                android:paddingLeft="14dp"
+                android:background="@drawable/makepostpage_inputbox_stroke"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/makePostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittrippage_gofeed_btn"
+            android:text="@string/makepostpage_makepost_button_text"
+            android:textAppearance="@style/edittrippage_go_feed_button_text"/>
 
     </LinearLayout>
 
