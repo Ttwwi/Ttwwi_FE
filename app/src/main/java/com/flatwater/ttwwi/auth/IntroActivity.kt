@@ -113,7 +113,7 @@ class IntroActivity : AppCompatActivity() {
             else if (token != null) {
                 Log.i(TAG, "카카오계정으로 로그인 성공 ${token.accessToken}")
                 authToken = token.accessToken
-                api.postAccessToken(UserModel(authorizationCode = authToken)).enqueue(object : retrofit2.Callback<LoginBackendResponse> {
+                api.postAccessToken(UserModel(accessToken = authToken)).enqueue(object : retrofit2.Callback<LoginBackendResponse> {
                     override fun onResponse(call: Call<LoginBackendResponse>, response: Response<LoginBackendResponse>) {
                         Log.d("로그인 통신 성공", response.toString())
                         Log.d("로그인 통신 성공", response.body().toString())
