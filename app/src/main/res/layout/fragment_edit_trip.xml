@@ -53,6 +53,7 @@
                         android:fontFamily="@font/jua"
                         android:hint="@string/edittrippage_title_input_hint"
                         android:padding="10dp"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/edittrippage_gray_color"
                         android:textSize="16sp" />
 
@@ -138,6 +139,7 @@
                         android:fontFamily="@font/jua"
                         android:hint="@string/edittrippage_subtitle_input_hint"
                         android:padding="10dp"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/edittrippage_gray_color"
                         android:textSize="16sp" />
 
@@ -170,6 +172,7 @@
                         android:fontFamily="@font/jua"
                         android:hint="@string/edittrippage_description_input_hint"
                         android:padding="10dp"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/edittrippage_gray_color"
                         android:textSize="16sp" />
 
@@ -202,8 +205,10 @@
                         android:fontFamily="@font/jua"
                         android:hint="@string/edittrippage_password_input_hint"
                         android:padding="10dp"
+                        android:textColor="@color/black"
                         android:textColorHint="@color/edittrippage_gray_color"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:inputType="textPassword"/>
 
                 </LinearLayout>
 
